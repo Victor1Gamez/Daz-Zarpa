@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daz Zerpa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/logo.png" title="Daz Zerpa" alt="Daz Zerpa Logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#herrajes">Tienda</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <button class="cart-icon" id="cartButton">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="slider">
+                <div class="slide active">
+                    <div class="slide-bg" style="background-image: url('img/hero-1.jpg');"></div>
+                    <div class="hero-content">
+                        <h1>Daz Zerpa</h1>
+                        <p>Creamos muebles únicos con la más alta calidad</p>
+                        <a href="#contacto" class="cta-button">Contáctanos</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('img/hero-2.jpg');"></div>
+                    <div class="hero-content">
+                        <h1>Diseños Personalizados</h1>
+                        <p>Cada proyecto es único y adaptado a tus necesidades</p>
+                        <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg" style="background-image: url('img/hero-3.jpg');"></div>
+                    <div class="hero-content">
+                        <h1>15 Años de Experiencia</h1>
+                        <p>Expertos en carpintería fina y acabados de primera</p>
+                        <a href="#nosotros" class="cta-button">Conócenos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                <div class="slide-dots"></div>
+                <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="herrajes" class="herrajes">
+            <h2>Tienda</h2>
+            <div class="herrajes-grid">
+                <div class="herraje-card">
+                    <img src="img/herrajes/Bisagra.png" alt="Bisagra Soft Close">
+                    <div class="herraje-info">
+                        <h3>Bisagras de Cierre Suave</h3>
+                        <p>Bisagra hidráulica con cierre suave. Ideal para puertas de cocina y closets.</p>
+                        <ul class="caracteristicas">
+                            <li><i class="fas fa-check"></i> Cierre suave y silencioso</li>
+                            <li><i class="fas fa-check"></i> Bisagra con Regulación 3D y Ángulo de Apertura 110°</li>
+                            <li><i class="fas fa-check"></i> Acero inoxidable</li>
+                        </ul>
+                        <div class="precio-comprar">
+                            <div class="precio">$12.99 USD</div>
+                            <button class="btn-comprar">
+                                <i class="fas fa-shopping-cart"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="herraje-card">
+                    <img src="img/herrajes/Rieles Telescópicos.png" alt="Rieles Telescópicos">
+                    <div class="herraje-info">
+                        <h3>Rieles Telescópicos</h3>
+                        <p>Rieles Telescópicos con sistema de cierre suave.</p>
+                        <ul class="caracteristicas">
+                            <li><i class="fas fa-check"></i> Extensión completa</li>
+                            <li><i class="fas fa-check"></i> Capacidad 45kg</li>
+                            <li><i class="fas fa-check"></i> Rodamientos de acero</li>
+                        </ul>
+                        <div class="precio-comprar">
+                            <div class="precio">$24.99 USD</div>
+                            <button class="btn-comprar">
+                                <i class="fas fa-shopping-cart"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="herraje-card">
+                    <img src="img/herrajes/Especiero.png" alt="Especiero">
+                    <div class="herraje-info">
+                        <h3>Especiero </h3>
+                        <p>Organizador de especias extraíble para cocina.</p>
+                        <ul class="caracteristicas">
+                            <li><i class="fas fa-check"></i> Sistema de canastas de alambre cromado</li>
+                            <li><i class="fas fa-check"></i> Mecanismo de extracción lateral con rieles telescópicos</li>
+                            <li><i class="fas fa-check"></i> Correderas ocultas para un acabado limpio</li>
+                        </ul>
+                        <div class="precio-comprar">
+                            <div class="precio">$8.99 USD</div>
+                            <button class="btn-comprar">
+                                <i class="fas fa-shopping-cart"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="herraje-card">
+                    <img src="img/herrajes/Brazo hidraulico.jpg" alt="Brazo Hidraulico">
+                    <div class="herraje-info">
+                        <h3>Brazo Hidraulico</h3>
+                        <p> Elevador de apertura hidráulico para puertas de armario.</p>
+                        <ul class="caracteristicas">
+                            <li><i class="fas fa-check"></i> Sistema hidráulico de amortiguación</li>
+                            <li><i class="fas fa-check"></i> Disponible en diferentes fuerzas: 60N, 80N, 100N, 120N</li>
+                            <li><i class="fas fa-check"></i> Facilita el acceso a armarios altos</li>
+                        </ul>
+                        <div class="precio-comprar">
+                            <div class="precio">$34.99 USD</div>
+                            <button class="btn-comprar">
+                                <i class="fas fa-shopping-cart"></i> Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalogo-container">
+                <a href="herrajes.html" class="ver-catalogo">Ver Catálogo Completo <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <h2>Diseños Personalizados</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/Proyecto1.jpg" alt="Proyecto 1">
+                    <h3>Cocina Moderna</h3>
+                    <p>Diseño y fabricación de cocina integral</p>
+                    <a href="cocinas.html" class="project-link">Ver más detalles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="img/Proyecto2.jpg" alt="Proyecto 2">
+                    <h3>Muebles para tv</h3>
+                    <p>Muebles personalizados para hogar</p>
+                    <a href="biblioteca.html" class="project-link">Ver más detalles <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <img src="img/Proyecto3.jpg" alt="Proyecto 3">
+                    <h3>Mobiliario Oficina</h3>
+                    <p>Proyecto completo de oficina corporativa</p>
+                    <a href="oficina.html" class="project-link">Ver más detalles <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Con más de 15 años de experiencia, en Daz Zerpa nos especializamos en crear muebles de alta calidad y diseños únicos. Nuestro compromiso es la excelencia y la satisfacción del cliente.
+                        Nos dedicamos a diseñar y fabricar cocinas modernas, muebles de TV elegantes y funcionales, así como cualquier otro tipo de mueble que se adapte a los gustos y necesidades de nuestros clientes. Cada pieza es creada cuidadosamente por nuestro talentoso equipo de diseñadores y artesanos, quienes combinan creatividad y precisión para ofrecer soluciones personalizadas y exclusivas.
+                        En Daz Zerpa, entendemos que los muebles son más que elementos decorativos: son parte fundamental de tu hogar y tu estilo de vida. Por eso, trabajamos estrechamente contigo en cada paso del proceso, asegurándonos de que cada detalle refleje tu personalidad y cumpla con las más altas exigencias de calidad.                        
+                        Déjanos transformar tus ideas en espacios únicos, donde la funcionalidad y la estética se fusionan para crear ambientes que inspiran. ¡Contáctanos y descubre cómo podemos llevar tus proyectos a la realidad!</p>
+                    <ul class="values">
+                        <li><i class="fas fa-check"></i> Calidad Premium</li>
+                        <li><i class="fas fa-check"></i> Diseños Personalizados</li>
+                        <li><i class="fas fa-check"></i> Atención al Detalle</li>
+                        <li><i class="fas fa-check"></i> Puntualidad en Entregas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+58 123 456 7890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>contacto@dazzerpa.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <p>San Jose Del Carmen, Chile</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Daz Zerpa</h3>
+                <p>Excelencia en muebles desde 2009</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Daz Zerpa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Carrito de Compras</h3>
+                <button class="close-cart">&times;</button>
+            </div>
+            <div class="cart-items">
+                <!-- Los items del carrito se agregarán aquí dinámicamente -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00 USD</span>
+                </div>
+                <button class="checkout-btn">
+                    <i class="fas fa-credit-card"></i> Proceder al Pago
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

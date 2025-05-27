@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocinas Modernas - Daz Zerpa Carpintería</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cocinas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html#inicio">
+                    <img src="img/logo.png" alt="Daz Zerpa Logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cocinas-page">
+        <section class="page-header">
+            <div class="header-content">
+                <h2>Cocinas Modernas</h2>
+                <p>Diseños exclusivos que combinan funcionalidad y elegancia</p>
+            </div>
+        </section>
+
+        <section class="cocinas-grid">
+            <article class="cocina-card">
+                <div class="cocina-image">
+                    <img src="img/cocina1.jpg" alt="Cocina Moderna Minimalista">
+                    <div class="cocina-overlay">
+                        <button class="ver-detalles" data-cocina="1"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="cocina-info">
+                    <h3>Cocina Moderna Minimalista</h3>
+                    <p>Diseño limpio y funcional con acabados en madera natural y superficies blancas</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Materiales premium</li>
+                        <li><i class="fas fa-check"></i> Almacenamiento optimizado</li>
+                        <li><i class="fas fa-check"></i> Iluminación LED integrada</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="cocina-card">
+                <div class="cocina-image">
+                    <img src="img/cocina2.jpg" alt="Cocina Contemporánea">
+                    <div class="cocina-overlay">
+                        <button class="ver-detalles" data-cocina="2"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="cocina-info">
+                    <h3>Cocina Contemporánea</h3>
+                    <p>Espacio elegante con isla central y acabados en madera oscura</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Isla multifuncional</li>
+                        <li><i class="fas fa-check"></i> Gabinetes hasta el techo</li>
+                        <li><i class="fas fa-check"></i> Electrodomésticos integrados</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="cocina-card">
+                <div class="cocina-image">
+                    <img src="img/cocina3.jpg" alt="Cocina Industrial">
+                    <div class="cocina-overlay">
+                        <button class="ver-detalles" data-cocina="3"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="cocina-info">
+                    <h3>Cocina Industrial</h3>
+                    <p>Estilo industrial con elementos de acero y madera rústica</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Durabilidad máxima</li>
+                        <li><i class="fas fa-check"></i> Espacio profesional</li>
+                        <li><i class="fas fa-check"></i> Ventilación premium</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modal para detalles -->
+    <div class="modal" id="cocina-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="" alt="" id="modal-main-image">
+                    <div class="thumbnail-gallery">
+                        <!-- Las miniaturas se cargarán dinámicamente -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2></h2>
+                    <p class="descripcion"></p>
+                    <div class="especificaciones">
+                        <h3>Especificaciones</h3>
+                        <ul></ul>
+                    </div>
+                    <div class="materiales">
+                        <h3>Materiales</h3>
+                        <ul></ul>
+                    </div>
+                    <div class="precio">
+                        <h3>Inversión Estimada</h3>
+                        <p></p>
+                    </div>
+                    <a href="index.html#contacto" class="cta-button">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Daz Zerpa</h3>
+                <p>Excelencia en carpintería desde 2009</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Daz Zerpa Carpintería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cocinas.js"></script>
+</body>
+</html> 

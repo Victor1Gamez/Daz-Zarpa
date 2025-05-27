@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliotecas Custom - Daz Zerpa Carpintería</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/biblioteca.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html#inicio">
+                    <img src="img/logo.png" alt="Daz Zerpa Logo">
+                </a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="biblioteca-page">
+        <section class="page-header">
+            <div class="header-content">
+                <h1>Bibliotecas Custom</h1>
+                <p>Espacios únicos para tus libros y colecciones</p>
+            </div>
+        </section>
+
+        <section class="biblioteca-grid">
+            <article class="biblioteca-card">
+                <div class="biblioteca-image">
+                    <img src="img/biblioteca1.jpg" alt="Biblioteca Clásica">
+                    <div class="biblioteca-overlay">
+                        <button class="ver-detalles" data-biblioteca="1"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="biblioteca-info">
+                    <h3>Biblioteca Clásica</h3>
+                    <p>Diseño tradicional con detalles ornamentales y acabados en madera noble</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Madera maciza</li>
+                        <li><i class="fas fa-check"></i> Estantes ajustables</li>
+                        <li><i class="fas fa-check"></i> Iluminación integrada</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="biblioteca-card">
+                <div class="biblioteca-image">
+                    <img src="img/biblioteca2.jpg" alt="Biblioteca Moderna">
+                    <div class="biblioteca-overlay">
+                        <button class="ver-detalles" data-biblioteca="2"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="biblioteca-info">
+                    <h3>Biblioteca Moderna</h3>
+                    <p>Diseño contemporáneo con líneas limpias y espacios multifuncionales</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Diseño modular</li>
+                        <li><i class="fas fa-check"></i> Espacio de trabajo integrado</li>
+                        <li><i class="fas fa-check"></i> Sistema de organización flexible</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="biblioteca-card">
+                <div class="biblioteca-image">
+                    <img src="img/biblioteca3.jpg" alt="Biblioteca Minimalista">
+                    <div class="biblioteca-overlay">
+                        <button class="ver-detalles" data-biblioteca="3"><i class="fas fa-search-plus"></i> Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="biblioteca-info">
+                    <h3>Biblioteca Minimalista</h3>
+                    <p>Diseño limpio y funcional con énfasis en la simplicidad</p>
+                    <ul class="caracteristicas">
+                        <li><i class="fas fa-check"></i> Diseño flotante</li>
+                        <li><i class="fas fa-check"></i> Acabados mate</li>
+                        <li><i class="fas fa-check"></i> Almacenamiento oculto</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Modal para detalles -->
+    <div class="modal" id="biblioteca-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <img src="" alt="" id="modal-main-image">
+                    <div class="thumbnail-gallery">
+                        <!-- Las miniaturas se cargarán dinámicamente -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2></h2>
+                    <p class="descripcion"></p>
+                    <div class="especificaciones">
+                        <h3>Especificaciones</h3>
+                        <ul></ul>
+                    </div>
+                    <div class="materiales">
+                        <h3>Materiales</h3>
+                        <ul></ul>
+                    </div>
+                    <div class="precio">
+                        <h3>Inversión Estimada</h3>
+                        <p></p>
+                    </div>
+                    <a href="index.html#contacto" class="cta-button">Solicitar Presupuesto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Daz Zerpa</h3>
+                <p>Excelencia en muebles desde 2009</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/daz.zerpa/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/zerpafrankcarlos/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@dazzerpa" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Daz Zerpa. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/biblioteca.js"></script>
+</body>
+</html> 
